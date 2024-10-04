@@ -4,4 +4,7 @@ import java.util.HashSet;
 public class GestioneCorsi {
     HashSet<String> corsiStudente = new HashSet<>();
     HashMap<String, HashSet<String>> studenteHashMap = new HashMap<>();
+
+    public void addStudente(String matricola){
+    }
 }
