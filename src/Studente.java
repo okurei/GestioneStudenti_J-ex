@@ -1,4 +1,3 @@
-import java.util.HashSet;
 import java.util.Objects;
 
 public class Studente {
@@ -6,13 +5,11 @@ public class Studente {
     private final String cognome;
     private final String matricola;
     private static int numeroStudenti = 1;
-    public HashSet<String> set;
 
     public Studente(String nome, String cognome) {
         this.nome = nome;
         this.cognome = cognome;
         this.matricola = String.valueOf(1000 + numeroStudenti);
-        this.set = new HashSet<>();
         numeroStudenti++;
     }
 
