@@ -5,7 +5,6 @@ public class MenuIniziale {
     Scanner scan = new Scanner(System.in);
     GestioneStudenti gestioneStudenti = new GestioneStudenti();
     GestioneCorsi gestioneCorsi = new GestioneCorsi();
-    Studente studente;
 
     public void menuIniziale(){
         System.out.println("Seleziona 1 per gestire gli studenti iscritti\nSeleziona 2 per gestire i corsi\nSeleziona 3 per chiudere l`applicazione");
