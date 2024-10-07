@@ -15,6 +15,12 @@ public class GestioneStudenti {
         System.out.println(studente);
         corpoStudenti.add(studente);
     }
+
+    public void addStudentiInizio(String nome, String cognome){
+        Studente studente = new Studente(nome, cognome);
+        corpoStudenti.add(studente);
+    }
+
     public void removeStudente (){
         System.out.print("Inserisci il numero matricola dello studente da rimuovere: ");
         String matricola = scan.next();
@@ -22,14 +28,14 @@ public class GestioneStudenti {
     }
 
     public void findStudente(){
-        int index = findIndexStudente(findStudenteDaMatricola());
+        int index = findIndexStudente(askMatricola());
         if (index == -1){
             System.out.println("Il numero matricola inserito non è correto");
         }else {
             System.out.println(corpoStudenti.get(index));
         }
     }
-    public String findStudenteDaMatricola(){
+    public String askMatricola(){
         System.out.print("Inserisci il numero di matricola dello studente da trovare: ");
         return scan.next();
     }
